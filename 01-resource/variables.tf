@@ -4,5 +4,5 @@ variable "instalce_type" {
 
 
 variable "domain_name" {
-  default = "edutech.online"
+  default = "eudtech.online"
 }
