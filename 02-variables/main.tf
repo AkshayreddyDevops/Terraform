@@ -25,3 +25,7 @@ output "list1"{
 output "map1" {
   value = "Traning ${var.map1["course"]} starts at ${var.map1["time"]} tought by ${var.map1["tranner"]}"
 }
+
+variable "c" {
+  type = number
+}
