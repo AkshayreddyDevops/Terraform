@@ -3,7 +3,7 @@
 resource "aws_instance" "frontend"{
   instance_type = "t3.small"
   ami = data.aws_ami.ami
-  vpc_security_group_ids = data.aws_security_groups.sg
+  vpc_security_group_ids = data.aws_security_groups.sg.ids
   tags ={
     Name="frontend"
   }
