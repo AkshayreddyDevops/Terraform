@@ -29,3 +29,7 @@ output "map1" {
 variable "c" {
   type = number
 }
+
+output "c"{
+  value = var.c
+}
