@@ -19,9 +19,9 @@ output "x"{
 }
 
 output "list1"{
-  value = "Training ${var.list1[0]} starts at ${var.list1[1]} tought by ${var.list1[2]}}"
+  value = "Training ${var.list1[0]} starts at ${var.list1[1]} tought by ${var.list1[2]}"
 }
 
 output "map1" {
-  value = "Traning ${var.map1["course"]} starts at ${var.map1["time"]} tought by ${var.map1["tranner"]}}"
+  value = "Traning ${var.map1["course"]} starts at ${var.map1["time"]} tought by ${var.map1["tranner"]}"
 }
