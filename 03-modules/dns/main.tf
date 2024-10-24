@@ -3,8 +3,9 @@ resource "aws_route53_record" "test" {
   name = "test"
   type = "A"
   ttl = var.ttl == ""?15:var.ttl
-  records = ["1.1.1.1"]
+  records = [vars.private_ip]
 }
 
-variable "ttl" {}
-variable "  private_ip" {}
+
+variable "ttl"{}
+variable "private_ip" {}
