@@ -1,0 +1,9 @@
+name: learn-github-action
+run-name: ${{ github.actor }} is learning github actors
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo hello
