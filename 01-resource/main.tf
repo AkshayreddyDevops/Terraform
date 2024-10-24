@@ -2,8 +2,8 @@
 #Create EC2 instances
 resource "aws_instance" "frontend"{
   instance_type = "t3.small"
-  ami = var.ami 
-  vpc_security_group_ids = var.vpc_security_group_ids
+  ami = data.aws_ami.ami
+  vpc_security_group_ids = data.aws_security_groups.sg
   tags ={
     Name="frontend"
   }
@@ -12,7 +12,7 @@ resource "aws_instance" "frontend"{
 # Create Rout53
 
 resource "aws_route53_record" "frontend"{
-  zone_id = var.zone_id
+  zone_id = data.aws_route53_zone.zoneid
   name = "frontend.dev.${var.domain_name}"
   type = "A"
   ttl = 300
