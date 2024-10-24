@@ -3,7 +3,7 @@ resource "aws_route53_record" "test" {
   name = "test"
   type = "A"
   ttl = 15
-  records = [vars.private_ip]
+  records = [var.private_ip]
 }
 
 
