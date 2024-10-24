@@ -12,9 +12,9 @@ data "aws_security_groups" "sg" {
 }
 
 resource "aws_instance" "test"{
-  ami = data.aws_ami.id
+  ami = data.aws_ami.ami.id
   vpc_security_group_ids = data.aws_security_groups.sg.ids
-  instance_type=vars.instance_type
+  instance_type=var.instance_type
   tags={
     Name = "test"
   }
