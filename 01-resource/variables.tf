@@ -5,10 +5,10 @@ variable "domain_name" {
 variable "components"{
   default = {
     frontend ={
-      instalce_type = "t3.micro"
+      instance_type = "t3.micro"
     }
     mongo ={
-      instalce_type = "t3.small"
+      instance_type = "t3.small"
     }
   }
 }
