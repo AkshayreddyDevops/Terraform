@@ -13,5 +13,5 @@ data "aws_security_groups" "sg" {
 }
 
 data "aws_route53_zone" "zoneid"{
-  name = "Z085093733LY1YYTUF9Q4"
+  name = var.domain_name
 }
